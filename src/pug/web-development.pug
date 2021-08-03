@@ -1,0 +1,19 @@
+extends layouts/LayoutTheme
+include mixins/common/Cta
+include mixins/common/Footer
+//- include mixins/web-development/FeaturedCourses
+include mixins/web-development/CourseCategory 
+
+
+
+append variables
+  - var currentPage = 'web-development'
+
+prepend scripts
+  
+append content
+  +CourseCategory
+  //- +FeaturedCourses
+  +Cta 
+  +PreFooter
+  
