@@ -1,7 +1,9 @@
 extends layouts/LayoutTheme
 include mixins/common/Cta
 include mixins/common/Footer
-//- include mixins/pricing/PricingTable
+include mixins/common/StudentFeedback
+include mixins/user-research/Header
+include mixins/user-research/WebVsUxDesigner
 
 
 
@@ -11,7 +13,9 @@ append variables
 prepend scripts
   
 append content
-
+  +UserHeader
+  +WebVsUxDesigner
+  +StudentFeedback
   +Cta 
   +PreFooter
   

@@ -1,6 +1,6 @@
 append variables
   -
-    var courses= [
+    var category= [
       {
         image:'design.png',
         title :'User Research for User Experience Design',
@@ -32,7 +32,7 @@ append variables
         text: 'The Museum of Modern Art',
       },
       {
-        image:'user-research.png',
+        image:'user-design.png',
         title :'User Research for User Experience Design',
         text: 'The Museum of Modern Art',
       },
@@ -43,6 +43,36 @@ append variables
       },
       {
         image:'art-design.png',
+        title :'Modern and Contemporary Art and Design',
+        text: 'The Museum of Modern Art',
+      },
+      {
+        image:'user-research.png',
+        title :'Modern and Contemporary Art and Design',
+        text: 'The Museum of Modern Art',
+      },
+      {
+        image:'photographs.png',
+        title :'Advance on Seeing Through Photographs',
+        text: 'Duke University',
+      },
+      {
+        image:'ux.png',
+        title :'Modern and Contemporary Art and Design',
+        text: 'The Museum of Modern Art',
+      },
+      {
+        image:'design.png',
+        title :'User Research for User Experience Design',
+        text: 'The Museum of Modern Art',
+      },
+      {
+        image:'critical-thinking.png',
+        title :'Introduction to Logic and Critical Thinking',
+        text: 'Duke University',
+      },
+      {
+        image:'art-design-1.png',
         title :'Modern and Contemporary Art and Design',
         text: 'The Museum of Modern Art',
       },
@@ -57,26 +87,31 @@ mixin Courses(config)
         h5.font-sans-serif.fw-bold!=config.title
         p.text-muted.fs--1!=config.text
 
-mixin FeaturedCourses 
-  +Section 
-    .row 
-      h1.text-center.mb-5  Top Featured Courses
-      +Courses(courses[0])
-      +Courses(courses[1])
-      +Courses(courses[2])
-      +Courses(courses[3])
-      +Courses(courses[4])
-      +Courses(courses[5])
-      +Courses(courses[6])
-      +Courses(courses[7])
-      +Courses(courses[8])
+mixin CourseCategory
+  +Section.pb-0(style="margin-top:-17rem") 
+    .row
+      +Courses(category[0])
+      +Courses(category[1])
+      +Courses(category[2])
+      +Courses(category[3])
+      +Courses(category[4])
+      +Courses(category[5])
+      +Courses(category[6])
+      +Courses(category[7])
+      +Courses(category[8])
+      +Courses(category[9])
+      +Courses(category[10])
+      +Courses(category[11])
+      +Courses(category[12])
+      +Courses(category[13])
+      +Courses(category[14])
 
 
 
-mixin CourseCategory 
-  +Section
-    .row 
-      .col
-        h6.font-sans-serif.text-primary.fw-bold Course category
-        h1.mb-6 Web Development
+//- mixin CourseCategory 
+//-   +Section
+//-     .row 
+//-       .col
+//-         h6.font-sans-serif.text-primary.fw-bold Course category
+//-         h1.mb-6 Web Development
 

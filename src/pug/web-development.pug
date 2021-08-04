@@ -1,7 +1,7 @@
 extends layouts/LayoutTheme
 include mixins/common/Cta
 include mixins/common/Footer
-//- include mixins/web-development/FeaturedCourses
+include mixins/web-development/Header
 include mixins/web-development/CourseCategory 
 
 
@@ -12,8 +12,8 @@ append variables
 prepend scripts
   
 append content
+  +DevelopmentHeader
   +CourseCategory
-  //- +FeaturedCourses
   +Cta 
   +PreFooter
   
