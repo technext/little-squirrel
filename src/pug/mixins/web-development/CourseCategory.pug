@@ -85,7 +85,7 @@ mixin Courses(config)
       img(src=`${CWD}assets/img/gallery/${config.image}` alt='courses')
       .card-body
         h5.font-sans-serif.fw-bold!=config.title
-        p.text-muted.fs--1!=config.text
+        a.text-muted.fs--1.stretched-link(href='#!')!=config.text
 
 mixin CourseCategory
   +Section.pb-0(style="margin-top:-17rem") 
@@ -105,13 +105,3 @@ mixin CourseCategory
       +Courses(category[12])
       +Courses(category[13])
       +Courses(category[14])
-
-
-
-//- mixin CourseCategory 
-//-   +Section
-//-     .row 
-//-       .col
-//-         h6.font-sans-serif.text-primary.fw-bold Course category
-//-         h1.mb-6 Web Development
-

@@ -73,7 +73,7 @@ $grays: map-merge(
 //*-----------------------------------------------
 //|   Solid Colors
 //-----------------------------------------------*/
-$blue: #002147 !default;
+$blue: #002147  !default;
 $indigo: #6237FF !default;
 $purple:  #A1B0FC!default;
 $pink: #D42DA3 !default;
@@ -337,7 +337,6 @@ $btn-border-radius-lg: 0.35rem !default;
 //|   Navigation
 //-----------------------------------------------*/
 $navbar-font-size: $font-size-base * 0.8 !default;
-$navbar-light-active-color: $black !default;
 $navbar-light-color: rgba($black, 0.90) !default;
 $navbar-light-hover-color: rgba($black, 0.95) !default;
 $navbar-light-active-color: $gray-1000 !default;
