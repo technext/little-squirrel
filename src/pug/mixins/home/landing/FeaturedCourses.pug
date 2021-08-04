@@ -55,7 +55,8 @@ mixin Courses(config)
       img(src=`${CWD}assets/img/gallery/${config.image}` alt='courses')
       .card-body
         h5.font-sans-serif.fw-bold!=config.title
-        p.text-muted.fs--1!=config.text
+        a.text-muted.fs--1.stretched-link(href='#!')!=config.text
+        //- a.btn.btn-primary.stretched-link(href='#') Go somewhere    
 
 mixin FeaturedCourses 
   +Section 
