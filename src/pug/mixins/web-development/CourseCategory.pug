@@ -79,14 +79,6 @@ append variables
     ];
 
 
-mixin Courses(config)
-  .col-md-4.mb-4
-    .card.h-100
-      img.card-img-top.w-100(src=`${CWD}assets/img/gallery/${config.image}` alt='courses')
-      .card-body
-        h5.font-sans-serif.fw-bold!=config.title
-        a.text-muted.fs--1.stretched-link(href='#!')!=config.text
-
 mixin CourseCategory
   +Section.pb-0(style="margin-top:-17rem") 
     .row

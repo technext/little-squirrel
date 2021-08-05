@@ -9,13 +9,14 @@ mixin NavbarLittleSquirrel
       #navbarSupportedContent.collapse.navbar-collapse.border-top.border-lg-0.mt-4.mt-lg-0
         ul.navbar-nav.ms-auto.pt-2.pt-lg-0.font-base
           li.nav-item.px-2
-            a.nav-link.fw-medium(aria-current='page', href=`${CWD}index.html` class= currentPage === 'index' ? 'active' : false ) Home
+            a.nav-link(aria-current='page', href=`${CWD}index.html` class=currentPage === 'index' ? 'active' : false ) Home
+          //- #{console.log(currentPage)}
           li.nav-item.px-2
-            a.nav-link(href=`${CWD}pricing.html`) Pricing
+            a.nav-link(aria-current='page', href=`${CWD}pricing.html` class=currentPage === 'pricing' ? 'active' : false) Pricing
           li.nav-item.px-2
-            a.nav-link(href=`${CWD}web-development.html`) Web Development
+            a.nav-link(aria-current='page', href=`${CWD}web-development.html` class=currentPage === 'web-development' ? 'active' : false) Web Development
           li.nav-item.px-2
-            a.nav-link(href=`${CWD}user-research.html`) User Research
+            a.nav-link(aria-current='page', href=`${CWD}user-research.html` class=currentPage === 'user-research' ? 'active' : false) User Research
 
         form.d-flex
           a.btn.btn-primary.order-1.order-lg-0( href="#!") Sign Up
