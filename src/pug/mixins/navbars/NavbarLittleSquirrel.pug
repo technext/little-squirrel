@@ -18,7 +18,16 @@ mixin NavbarLittleSquirrel
           li.nav-item.px-2
             a.nav-link(aria-current='page', href=`${CWD}user-research.html` class=currentPage === 'user-research' ? 'active' : false) User Research
 
-        form.d-flex
-          a.btn.btn-primary.order-1.order-lg-0( href="#!") Sign Up
-          button.btn.btn-outline-light.ms-2(type='submit')
+
+        a.btn.btn-primary.order-1.order-lg-0( href="#!") Sign Up
+        form.d-flex.my-3.d-block.d-lg-none
+          input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+          button.btn.btn-outline-primary(type='submit') Search
+
+        .dropdown.d-none.d-lg-block
+          button.btn.btn-outline-light#dropdownMenuButton1.ms-2(type='submit' data-bs-toggle='dropdown' aria-expanded='false')
             i.fas.fa-search.text-800
+          
+          ul.dropdown-menu.dropdown-menu-lg-end(aria-labelledby='dropdownMenuButton1' style="top:55px")
+            form
+              input.form-control(type='search' placeholder='Search' aria-label='Search') 
