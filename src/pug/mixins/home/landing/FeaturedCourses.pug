@@ -52,9 +52,9 @@ append variables
 mixin Courses(config)
   .col-md-4.mb-4
     .card.h-100
-      img(src=`${CWD}assets/img/gallery/${config.image}` alt='courses')
+      img.card-img-top.w-100(src=`${CWD}assets/img/gallery/${config.image}` alt='courses')
       .card-body
-        h5.font-sans-serif.fw-bold!=config.title
+        h5.font-sans-serif.fw-bold.fs-md-0.fs-lg-1!=config.title
         a.text-muted.fs--1.stretched-link(href='#!')!=config.text
           
 mixin FeaturedCourses 

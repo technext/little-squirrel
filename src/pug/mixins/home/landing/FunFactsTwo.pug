@@ -26,8 +26,8 @@ append variables
 
 
 mixin FunfactItem(config)
-  .col-md-3.text-center 
-    img.w-md-100.w-lg-75(src=`${CWD}assets/img/gallery/${config.image}` height="180" alt='...')
+  .col-sm-6.col-md-3.text-center.mb-5
+    img.w-md-100.w-lg-75(src=`${CWD}assets/img/gallery/${config.image}` height="150" alt='...')
     h1.my-2=config.number
     p.text-info.fw-bold=config.text 
 
